@@ -22,8 +22,7 @@ A fairly basic dashboard displaying key statistics of text messages in the datab
     - DisasterResponse.db - SQL table containing clean, merged table with text messages and corresponding categories as columns. Created in this project.    
     - process_data.py - ETL pipeline - Extracts data from csv files, cleans and transforms category texts into category columns and loads into SQL database.  
 3. models/  
-    - train_classifier.py - Creates and trains NLP and ML pipelines for text message classification.  
-    - <optional> - classifier.pkl - Trained and cross-validated text classification pipeline model saved in pickle  format.  
+    - train_classifier.py - Creates and trains NLP and ML pipelines for text message classification.   
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
