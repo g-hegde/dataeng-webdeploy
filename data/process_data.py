@@ -90,6 +90,9 @@ def transform_data(df):
     # Assign category values by splitting each cell in dataframe
     categories = categories.applymap(lambda x:x.split('-')[1])
     
+    # The 'related' column contains 0, 1 and 2, map all 2 values to 1
+    categories['related'].map({'0':'0','1':'1','2':'1'})
+
     # Convert dataframe to integer format
     categories = categories.astype(int)
     
