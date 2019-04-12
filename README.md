@@ -35,7 +35,7 @@ A fairly basic dashboard displaying key statistics of text messages in the datab
 2. Run the following command in the app's directory to run your web app.
     `python run.py`
 
-3. Go to http://127.0.0.0:3001/ (if running on your laptop) or an appropriate web-server address.  
+3. Go to http://127.0.0.0:3001/ (if running on your laptop) or an appropriate web-server address. Type in a text message pertaining to disasters.   
 
 4. As it stands the run.py script expects a 'classifier.pkl' model file for prediction.
 
