@@ -7,6 +7,7 @@ This project demonstrates a number of skills relevant to data science workflows
 
 The dataset for this project is a set of text messages sent during real disasters. The messages were translated into English and categorized into several different classes. The message 'We need food and water over here' for instance could be classified simultaneously as 'Aid related', 'Water', 'Food' and 'Request'. A large corpus these messages is used for training multi-output classification models which can then be deployed to a back-end (using Flask) that runs on a web-server.   
 User input is obtained in the form of typed text messages into web forms. The machine learning application running on the back-end makes a prediction and sends the results to the front-end where a categories corresponding to that message are visually displayed.  
+
 A fairly basic dashboard displaying key statistics of text messages in the database is also displayed on the front page.
     
 ### Files and Directories included  
