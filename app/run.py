@@ -39,7 +39,7 @@ def index():
     top5_word_counts, top5_words = get_top5_words(df)
     
     # create visuals
-    # TODO: Below is an example - modify to create your own visuals
+    # Added two visuals to show top 5 categories of messages and top5 words that occur
     graphs = [
         {
             'data': [
