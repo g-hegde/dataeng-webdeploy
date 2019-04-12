@@ -3,12 +3,17 @@
 This project demonstrates a number of skills relevant to data science workflows  
 * Creating Extract Transform and Load (ETL) pipelines for text data.  
 * Creating Natural Language Processing (NLP) pipelines and Machine Learning (ML) pipelines for text messages.  
-* Deploying trained and validated ML models to webapps.    
+* Deploying trained and validated ML models to webapps.
+
+The dataset for this project is a set of text messages sent during real disasters. The messages were translated into English and categorized into several different classes. The message 'We need food and water over here' for instance could be classified simultaneously as 'Aid related', 'Water', 'Food' and 'Request'. A large corpus these messages is used for training multi-output classification models which can then be deployed to a back-end (using Flask) that runs on a web-server.   
+User input is obtained in the form of typed text messages into web forms. The machine learning application running on the back-end makes a prediction and sends the results to the front-end where a categories corresponding to that message are visually displayed.  
+A fairly basic dashboard displaying key statistics of text messages in the database is also displayed on the front page.
+    
 ### Files and Directories included  
 1. app/  
     - templates/  
-        - go.html - Udacity provided template for displaying relevant classification labels  
-        - master.html - Udacity provided dashboard template. Front page of webapp.  
+        - go.html - HTML file for displaying relevant classification labels  
+        - master.html - Front page of webapp. Dashboard containing overview plots for disaster message database.
     - run.py - Udacity provided Python template file containing Flask back-end code for webapp. Modified for use case.
 2. data/  
     - disaster_messages.csv - table containing disaster messages translated into english and transcribed in english from their respective original languages.  
@@ -30,4 +35,7 @@ This project demonstrates a number of skills relevant to data science workflows
 2. Run the following command in the app's directory to run your web app.
     `python run.py`
 
-3. Go to http://0.0.0.0:3001/
+3. Go to http://127.0.0.0:3001/ (if running on your laptop) or an appropriate web-server address.  
+
+4. As it stands the run.py script expects a 'classifier.pkl' model file for prediction.
+
